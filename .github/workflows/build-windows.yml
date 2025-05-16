@@ -29,7 +29,7 @@ jobs:
         pyinstaller --onefile main.py --name whisper-transcribe
 
     - name: Upload artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v3.1.3
       with:
         name: whisper-transcribe-exe
         path: dist/whisper-transcribe.exe
